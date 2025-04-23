@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MedRCM Timesheet Application Password Management Guide">
+    <meta name="keywords" content="MedRCM, password management, timesheet application, password reset">
+    <title>MedRCM Timesheet Application Password Management Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #0d4b87;
+            text-align: center;
+            border-bottom: 2px solid #0d4b87;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0d4b87;
+            margin-top: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #0d6b87;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+        .image-caption {
+            font-style: italic;
+            text-align: center;
+            margin-top: 5px;
+            color: #555;
+        }
+        ol, ul {
+            margin-left: 20px;
+        }
+        .important-notes {
+            background-color: #f8f9fa;
+            border-left: 5px solid #0d4b87;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            font-style: italic;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .download-button {
+            background-color: #0d4b87;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        @media print {
+            .download-button {
+                display: none;
+            }
+            body {
+                font-size: 12pt;
+            }
+            h1 {
+                font-size: 18pt;
+            }
+            h2 {
+                font-size: 16pt;
+            }
+            h3 {
+                font-size: 14pt;
+            }
+            img {
+                max-width: 100%;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+    <!-- Import html2pdf.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="generatePDF()" class="download-button">Download as PDF</button>
+    </div>
+    
+    <h1>MedRCM Timesheet Application Password Management Guide</h1>
+    
+    <p>This guide explains how to manage your password in the MedRCM Timesheet Application, including how to change your password after logging in and how to reset your password if you've forgotten it.</p>
+    
+    <h2>Changing Your Password After Login</h2>
+    
+    <h3>Step 1: Access the User Menu</h3>
+    <p>After logging into the MedRCM Timesheet Application, you will see your username (e.g., "medrcm.admin03") in the top-right corner of the navigation bar. Click on your username to open the dropdown menu.</p>
+    
+    <div class="image-container">
+        <img src="image1.jpg" alt="Employee Dashboard">
+        <div class="image-caption">Image 1: The Employee Dashboard showing the main interface of the timesheet application.</div>
+    </div>
+    
+    <h3>Step 2: Select "Change Password"</h3>
+    <p>From the dropdown menu, click on the "Change Password" option. This will take you to the password change page.</p>
+    
+    <div class="image-container">
+        <img src="image2.jpg" alt="Change Password Option in Dropdown Menu">
+        <div class="image-caption">Image 2: The dropdown menu displaying the "Change Password" option when clicking on the username.</div>
+    </div>
+    
+    <h3>Step 3: Enter Password Information</h3>
+    <p>On the Change Password page, you'll need to complete three fields:</p>
+    <ol>
+        <li><strong>Current Password</strong>: Enter your existing password (the placeholder indicates "demo/admin" as an example)</li>
+        <li><strong>New Password</strong>: Create your new password</li>
+        <li><strong>Confirm New Password</strong>: Re-enter your new password to verify it matches</li>
+    </ol>
+    
+    <div class="image-container">
+        <img src="image3.jpg" alt="Change Password Form">
+        <div class="image-caption">Image 3: The Change Password form with fields for current password, new password, and confirmation.</div>
+    </div>
+    
+    <h3>Step 4: Update Your Password</h3>
+    <p>After filling in all three fields, click the "Update Password" button to save your changes. The system will process your request and update your password.</p>
+    
+    <h2>Resetting Your Forgotten Password</h2>
+    
+    <h3>Step 1: Access the Login Page</h3>
+    <p>Navigate to the login page of the MedRCM Timesheet Application.</p>
+    
+    <div class="image-container">
+        <img src="image4.jpg" alt="Login Page">
+        <div class="image-caption">Image 4: The login page with username and password fields.</div>
+    </div>
+    
+    <h3>Step 2: Click "Forgot Password?"</h3>
+    <p>On the login page, click the "Forgot Password?" link located below the login button.</p>
+    
+    <h3>Step 3: Enter Your Employee ID</h3>
+    <p>On the Reset Password page, you'll be prompted to enter your Employee ID to verify your account.</p>
+    
+    <div class="image-container">
+        <img src="image5.jpg" alt="Reset Password - Employee ID Entry">
+        <div class="image-caption">Image 5: The Reset Password page requesting employee ID verification.</div>
+    </div>
+    
+    <h3>Step 4: Verify Your Identity</h3>
+    <p>After entering your Employee ID, click the "Verify" button to proceed.</p>
+    
+    <h3>Step 5: Create New Password</h3>
+    <p>After verification, you'll be taken to a page where you can set a new password:</p>
+    <ol>
+        <li><strong>New Password</strong>: Enter your desired new password</li>
+        <li><strong>Confirm New Password</strong>: Re-enter the same password to confirm</li>
+    </ol>
+    
+    <div class="image-container">
+        <img src="image6.jpg" alt="Reset Password - New Password Entry">
+        <div class="image-caption">Image 6: The password reset page with empty fields for entering a new password.</div>
+    </div>
+    
+    <div class="image-container">
+        <img src="image7.jpg" alt="Reset Password - Confirmation">
+        <div class="image-caption">Image 7: The password reset page showing the completed password fields with instructions.</div>
+    </div>
+    
+    <h3>Step 6: Complete Password Reset</h3>
+    <p>Click the "Reset Password" button after entering and confirming your new password. Once processed, your password will be reset, and you can use the new password to log in.</p>
+    
+    <div class="important-notes">
+        <h3>Important Notes</h3>
+        <ul>
+            <li>Always ensure your passwords are secure by using a combination of letters, numbers, and special characters</li>
+            <li>Remember to keep your password confidential</li>
+            <li>The system may have specific password requirements (minimum length, character types, etc.)</li>
+            <li>If you continue to experience issues, contact your system administrator</li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 MedRCM. All rights reserved.</p>
+    </div>
+
+    <script>
+    function generatePDF() {
+        // Define element that will be converted
+        const element = document.body;
+        
+        // Create a clone of the element to modify for PDF export
+        const clone = element.cloneNode(true);
+        
+        // Remove the download button from the clone
+        const buttons = clone.getElementsByClassName('download-button');
+        while(buttons.length > 0) {
+            buttons[0].parentNode.removeChild(buttons[0]);
+        }
+        
+        // Set options for PDF generation
+        const opt = {
+            margin: [0.5, 0.5, 0.5, 0.5],
+            filename: 'MedRCM_Password_Management_Guide.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+        
+        // Generate PDF
+        html2pdf().set(opt).from(clone).save();
+    }
+    </script>
+</body>
+</html>
